@@ -188,3 +188,12 @@ h2 { font-size: clamp(30px, 3.5vw, 44px); line-height: 1.2; letter-spacing: -.04
   .hero-meta { gap: 12px; }
   .visual-foot { flex-direction: column; }
 }
+
+/* Social profile links */
+.contact-foot a {
+  color: var(--cyan);
+  transition: color .2s ease;
+}
+.contact-foot a:hover {
+  color: var(--blue);
+}
