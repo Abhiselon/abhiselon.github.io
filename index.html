@@ -1,39 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Kulkarni</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhishek Kulkarni — Data Engineer building scalable data pipelines, cloud data platforms, and analytics-ready datasets." />
+  <title>Abhishek Kulkarni | Data Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Passionate Data Engineer</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">AK</span><span>ABHISHEK<span class="brand-muted">.DATA</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> DATA ENGINEER · BENGALURU, INDIA</div>
+        <h1>Turning raw data<br>into <span class="gradient-text">reliable systems.</span></h1>
+        <p class="hero-lede">I build scalable data pipelines and cloud-native platforms that make complex data useful, trusted, and ready for analytics.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+          <a class="button button-ghost" href="mailto:abhishekbkulkarni26@gmail.com">Get in touch <span>↗</span></a>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+        <div class="hero-meta">
+          <div><strong>4+</strong><span>Years in Data Engineering</span></div>
+          <div><strong>500+</strong><span>ETL objects migrated</span></div>
+          <div><strong>30%</strong><span>Infra cost reduction</span></div>
         </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Illustration of a data pipeline">
+        <div class="visual-label"><span class="tiny-square"></span> PIPELINE / 001</div>
+        <div class="pipeline">
+          <div class="pipe-node source"><span class="node-icon">▤</span><div><b>Sources</b><small>SQL · Files · Events</small></div><span class="node-state">01</span></div>
+          <div class="pipe-line"><i></i><i></i><i></i></div>
+          <div class="pipe-node transform"><span class="node-icon">⌘</span><div><b>Transform</b><small>PySpark · dbt · SQL</small></div><span class="node-state">02</span></div>
+          <div class="pipe-line"><i></i><i></i><i></i></div>
+          <div class="pipe-node warehouse"><span class="node-icon">▦</span><div><b>Warehouse</b><small>BigQuery · Starburst</small></div><span class="node-state">03</span></div>
+          <div class="pipe-line"><i></i><i></i><i></i></div>
+          <div class="pipe-node output"><span class="node-icon">↗</span><div><b>Insights</b><small>Trusted analytics</small></div><span class="node-state">04</span></div>
+        </div>
+        <div class="visual-foot"><span>ORCHESTRATED WITH AIRFLOW</span><span class="live-pulse">● SYSTEM READY</span></div>
+      </div>
     </section>
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: example@example.com</p>
-    </footer>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-kicker">01 / ABOUT</div>
+      <div class="about-grid">
+        <h2>Engineering the<br><span class="muted-heading">flow of data.</span></h2>
+        <div class="about-copy">
+          <p>I'm Abhishek Kulkarni, a Data Engineer with 4 years of experience designing, building, and optimizing data pipelines and ETL workflows. My work spans data curation, migration, modeling, validation, and cloud-native analytics platforms.</p>
+          <p>I enjoy solving the hard parts of data engineering: making pipelines dependable, improving performance, and creating clear paths from source systems to analytics-ready data.</p>
+          <div class="focus-tags"><span>Pipeline Engineering</span><span>Data Quality</span><span>Cloud Data Platforms</span><span>Performance Tuning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap stack-section" id="stack">
+      <div class="section-heading">
+        <div><div class="section-kicker">02 / TOOLKIT</div><h2>My engineering stack</h2></div>
+        <p>Tools I use to build, orchestrate, and optimize data systems.</p>
+      </div>
+      <div class="stack-grid">
+        <article class="stack-card"><div class="stack-card-top"><span class="stack-symbol">Py</span><span class="card-index">01</span></div><h3>Languages & Compute</h3><p>Python, SQL, PySpark, Apache Hadoop, Hive</p></article>
+        <article class="stack-card"><div class="stack-card-top"><span class="stack-symbol cloud">G</span><span class="card-index">02</span></div><h3>Cloud & Warehousing</h3><p>GCP, BigQuery, Dataproc, Cloud Composer, Pub/Sub, AWS S3, Redshift, EMR</p></article>
+        <article class="stack-card"><div class="stack-card-top"><span class="stack-symbol dbt">db</span><span class="card-index">03</span></div><h3>Modeling & Transformation</h3><p>dbt, Starburst, Data Modeling, SCD Type 1 & 2</p></article>
+        <article class="stack-card"><div class="stack-card-top"><span class="stack-symbol airflow">↻</span><span class="card-index">04</span></div><h3>Orchestration & Delivery</h3><p>Apache Airflow, Git, GitHub Actions, Jira, Confluence</p></article>
+      </div>
+    </section>
+
+    <section class="section-wrap experience-section" id="work">
+      <div class="section-kicker">03 / EXPERIENCE</div>
+      <h2>Where I've made an impact</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">APR 2025 — PRESENT</div>
+          <div class="timeline-content"><div class="timeline-title"><h3>Data Engineer 2</h3><span>ANZ Operations & Technology</span></div>
+            <ul><li>Curate datasets for remediation processes by integrating multiple sources, including BIH, GIW, and RSDS, into unified curated datasets.</li><li>Streamline data stitching workflows to reduce dataset preparation turnaround time for downstream analytics teams.</li><li>Perform CDC verification, transformation checks, and full source-to-curated data comparisons.</li></ul>
+            <div class="mini-tags"><span>Data Curation</span><span>SQL</span><span>Data Validation</span></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">JAN 2024 — APR 2025</div>
+          <div class="timeline-content"><div class="timeline-title"><h3>Data Engineer 1</h3><span>ANZ Operations & Technology</span></div>
+            <ul><li>Contributed to migration of 500+ ETL objects from Teradata to Starburst, dbt, and Airflow.</li><li>Helped reduce infrastructure costs by 30% and decommission 62 GB of storage.</li><li>Supported end-to-end pipelines from SQL Server through Starburst landing and dbt transformations, orchestrated with Airflow.</li></ul>
+            <div class="mini-tags"><span>Starburst</span><span>dbt</span><span>Airflow</span><span>Migration</span></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">JUL 2021 — OCT 2023</div>
+          <div class="timeline-content"><div class="timeline-title"><h3>Data Engineer</h3><span>Broadridge</span></div>
+            <ul><li>Designed scalable data processing workflows to extract, transform, and analyze account-holder data for business reporting.</li><li>Optimized Hive external tables using partitioning and bucketing, improving query performance by approximately 40%.</li></ul>
+            <div class="mini-tags"><span>Hive</span><span>PySpark</span><span>Hadoop</span><span>Performance Tuning</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading">
+        <div><div class="section-kicker">04 / SELECTED PROJECT</div><h2>Built for the data journey</h2></div>
+        <p>A practical cloud data platform—from ingestion to analytics-ready outputs.</p>
+      </div>
+      <article class="project-card">
+        <div class="project-main">
+          <div class="project-label"><span class="project-dot"></span> GCP · DATA PLATFORM</div>
+          <h3>E-commerce<br><span class="gradient-text">Data Platform</span></h3>
+          <p>Designed and deployed a cloud-native e-commerce data platform on GCP, using BigQuery, Cloud Composer, dbt, and Airflow to automate ELT and deliver analytics-ready models.</p>
+          <div class="project-tags"><span>BigQuery</span><span>Cloud Composer</span><span>dbt</span><span>Airflow</span><span>Gemini AI</span><span>GitHub Actions</span></div>
+        </div>
+        <div class="project-details">
+          <div class="project-detail"><span class="detail-number">01</span><div><b>Data generation & ingestion</b><p>Built synthetic data ingestion using Gemini AI.</p></div></div>
+          <div class="project-detail"><span class="detail-number">02</span><div><b>Quality & trusted metrics</b><p>Applied dbt tests for reliable LTV, revenue, and product performance KPIs.</p></div></div>
+          <div class="project-detail"><span class="detail-number">03</span><div><b>CI/CD & orchestration</b><p>Deployed dbt and Airflow pipelines to Composer with GitHub Actions and Secret Manager.</p></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-wrap education-section">
+      <div class="section-kicker">05 / EDUCATION</div>
+      <div class="education-card"><div class="edu-icon">∑</div><div><h3>Bachelor of Engineering</h3><p>BMS College of Engineering, Bengaluru</p><span>Jul 2017 — May 2021 · 8.13 CGPA</span></div><div class="edu-mark">BMSCE</div></div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="section-kicker">06 / CONTACT</div>
+        <h2>Have a data challenge?<br><span class="gradient-text">Let's build something.</span></h2>
+        <p>I'm open to conversations about Senior Data Engineer opportunities and interesting data platform problems.</p>
+        <a class="button button-primary" href="mailto:abhishekbkulkarni26@gmail.com">abhishekbkulkarni26@gmail.com <span>↗</span></a>
+        <div class="contact-foot"><span>+91 8073988546</span><span>Bengaluru, India</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">AK</span><span>ABHISHEK<span class="brand-muted">.DATA</span></span></a><span>Designed around data. Built for impact.</span><span>© 2026 Abhishek Kulkarni</span></footer>
 </body>
 </html>
